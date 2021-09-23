@@ -1,0 +1,39 @@
+#%RAML 1.0
+title: System API
+
+types:
+  CustomerType: !include /types/CustomerDataType.raml
+
+/customers:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: CustomerType[]
+            examples:
+              output: !include /examples/CustomersExample.raml
+  post:
+    body:
+      application/json:
+        type: CustomerType
+        examples:
+          input: !include /examples/CustomerNoIDExample.raml
+    responses:
+      201:
+        body:
+          application/json:
+            examples: 
+              output: Customer Added (Stub)
+  
+  /{ID}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: CustomerType
+              examples:
+                output: !include /examples/CustomerExample.raml
+              
+        
