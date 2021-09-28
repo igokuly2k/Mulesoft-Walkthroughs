@@ -1,0 +1,10 @@
+Public Portal : American Flights API (mulesoft.com)
+API Proxy: http://training4-american-ws-igokulsmailbox1.us-e2.cloudhub.io/flights
+
+Free Tier 
+Client ID:5f4ea5afd88f4dfd8c075d125d6c311b
+Client Secret:91bdE7B7aA1e4cc2A4C91fEbe53f26a3
+
+Silver Tier
+Client ID:2a455dccafcc4418a41ca1006dc16127
+Client Secret:6bE21c68B0094918BD1362dD2C65fAB9
